@@ -1,0 +1,88 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: chocolate;
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+#header {
+    background: black;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: teal;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    position: relative;
+    margin: 0 15px;
+}
+
+
+a:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 2px;
+    background: teal;
+    transition: .3s;
+}
+
+a:before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: teal;
+    transition: .3s;
+}
+
+
+a:hover {
+    color: teal;
+}
+
+
+a:hover:before{
+    width: 50%;
+
+}
+
+a:hover:after{
+    width: 50%;
+
+}
